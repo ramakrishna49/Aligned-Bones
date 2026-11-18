@@ -1000,7 +1000,10 @@ button {
     white-space: nowrap;
     color: var(--white);
 }
-.cta-phone-button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:10px;font-size:12px}
+.cta-phone-button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border:1px solid rgba(255,255,255,.8);border-radius:10px;background:transparent;color:#fff;font-size:12px;transition:var(--transition)}
+.cta-phone-button:hover,.cta-phone-button:focus-visible{border-color:#fff;background:#fff;color:var(--navy)!important}
+.cta-booking-button{border:1px solid #fff;background:#fff;color:var(--navy);transition:var(--transition)}
+.cta-booking-button:hover,.cta-booking-button:focus-visible{border-color:#fff;background:transparent!important;color:#fff!important}
 
 /* ---------- Footer ---------- */
 .footer {
@@ -2846,3 +2849,6 @@ img,picture,video,iframe{max-width:100%}
  .container .contact-info-card a,.container .footer-address-details a{overflow-wrap:anywhere}
  .container img,.container iframe,.container video,.container svg{max-width:100%}
 }
+
+.cta-box .cta-phone-button:hover,.cta-box .cta-phone-button:focus-visible{border-color:#fff;background:#fff!important;color:var(--navy)!important}
+.cta-box .cta-booking-button:hover,.cta-box .cta-booking-button:focus-visible{border-color:#fff;background:transparent!important;color:#fff!important}
