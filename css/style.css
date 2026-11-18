@@ -2857,9 +2857,10 @@ img,picture,video,iframe{max-width:100%}
 .navbar.scrolled .nav-links>li>a.active{color:var(--accent)!important}
 @media(max-width:1100px){.navbar .nav-links>li>a.active,.navbar.scrolled .nav-links>li>a.active{color:var(--accent)!important;background:rgba(52,91,145,.08);border-radius:8px;padding-inline:12px}}
 
-/* Transparent over the hero at page top, then switch to the white masthead on scroll. */
-.navbar:not(.scrolled){background:transparent;border-bottom-color:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
-.navbar:not(.scrolled) .logo-white{filter:brightness(0) invert(1)}
-.navbar:not(.scrolled) .nav-links>li>a,.navbar:not(.scrolled) .nav-actions .phone-btn{color:#fff}
-.navbar:not(.scrolled) .menu-toggle{color:#fff}
+/* Glossy white glass header at page top, becoming more solid after scrolling. */
+.navbar:not(.scrolled){background:rgba(255,255,255,.92);border-bottom:1px solid rgba(255,255,255,.78);box-shadow:0 8px 30px rgba(12,35,73,.09);backdrop-filter:blur(18px) saturate(165%);-webkit-backdrop-filter:blur(18px) saturate(165%)}
+.navbar:not(.scrolled) .logo-white{filter:none}
+.navbar:not(.scrolled) .nav-links>li>a,.navbar:not(.scrolled) .nav-actions .phone-btn{color:var(--navy)}
+.navbar:not(.scrolled) .menu-toggle{color:var(--navy)}
+.navbar.scrolled{background:rgba(255,255,255,.98);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%)}
 @media(max-width:1100px){.navbar:not(.scrolled) .nav-links.active>li>a{color:var(--navy)!important}.navbar:not(.scrolled) .nav-links.active>li>a.active{color:var(--accent)!important}}
