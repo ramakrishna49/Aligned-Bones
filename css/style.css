@@ -1000,6 +1000,7 @@ button {
     white-space: nowrap;
     color: var(--white);
 }
+.cta-phone-button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:10px;font-size:12px}
 
 /* ---------- Footer ---------- */
 .footer {
@@ -2827,6 +2828,10 @@ img,picture,video,iframe{max-width:100%}
  .blog-hero-bg{background-image:linear-gradient(90deg,rgba(5,24,45,.95),rgba(5,24,45,.82)),url('../images/blog-hero.webp')}
  .booking-hero-bg{background-image:linear-gradient(90deg,rgba(5,24,45,.95),rgba(5,24,45,.82)),url('../images/appointment-hero.webp')}
  .doctor-hero-bg{background-image:linear-gradient(90deg,rgba(5,24,45,.95),rgba(5,24,45,.82)),url('../images/doctors-hero.webp')}
+}
+
+@media(max-width:650px){
+ .cta-box>.cta-phone-button,.cta-box>.btn{width:100%;justify-content:center;text-align:center}
 }
 
 /* Mobile layouts keep copy inside the viewport instead of requiring sideways scrolling. */
