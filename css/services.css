@@ -1,0 +1,56 @@
+/* Service detail pages */
+.service-hero{min-height:560px;background:linear-gradient(90deg,rgba(5,27,49,.96) 0%,rgba(5,27,49,.84) 45%,rgba(5,27,49,.28) 100%),url('../images/hero-spine-doctor.webp') center 44%/cover no-repeat}
+.service-hero .hero-content{max-width:760px;padding-top:110px}
+.service-hero .hero h1,.service-hero h1{max-width:760px;font-size:clamp(44px,5.6vw,70px);line-height:1.02}
+.service-hero .section-tag{color:#B7CBE8}
+.service-hero .hero-content>p{max-width:640px;font-size:15px;line-height:1.85}
+.service-page .breadcrumb{display:flex;align-items:center;gap:10px;margin-bottom:22px;color:#e0eaf2;font-size:12px}
+.service-page .breadcrumb a{color:#fff}.service-page .breadcrumb i{color:#B7CBE8}.service-page .breadcrumb span{color:#B7CBE8}
+.service-overview{background:#fff}.service-overview-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(30px,6vw,75px)}
+.service-overview-image{height:420px;overflow:hidden;border-radius:20px;background:#e8eff4;box-shadow:0 15px 36px rgba(10,37,64,.11)}
+.service-overview-image img{width:100%;height:100%;object-fit:cover}
+.service-overview-copy h2,.service-approach-copy h2{margin:9px 0 17px;color:var(--navy);font-size:clamp(35px,4.3vw,50px);line-height:1.08}
+.service-overview-copy p,.service-approach-copy>p{margin-bottom:15px;color:var(--text-light);font-size:14px;line-height:1.9}
+.service-overview-copy .btn{margin-top:8px}
+.service-topics,.service-process{background:#f2f6fb}
+.service-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.service-card{height:100%;padding:26px 22px;border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:0 8px 22px rgba(10,37,64,.06);transition:var(--transition)}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 14px 28px rgba(10,37,64,.11)}
+.service-card>i{display:grid;width:46px;height:46px;place-items:center;margin-bottom:16px;border-radius:14px;background:#edf2f9;color:var(--accent);font-size:20px}
+.service-card h3{margin-bottom:8px;color:var(--navy);font-size:23px}.service-card p{color:var(--text-light);font-size:12px;line-height:1.8}
+.service-consult{background:var(--navy);color:#fff}.service-consult .section-heading h2{color:#fff}.service-consult .section-heading p{color:#d0deea}
+.service-consult-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.service-consult-item{display:flex;align-items:flex-start;gap:13px;padding:20px;border:1px solid rgba(255,255,255,.16);border-radius:13px;background:rgba(255,255,255,.045)}
+.service-consult-item i{flex:none;margin-top:3px;color:#B7CBE8}.service-consult-item p{color:#e2ebf2;font-size:12px;line-height:1.8}
+.service-note{margin-top:22px;color:#c6d5e2;font-size:11px;line-height:1.8}
+.service-approach{background:#fff}.service-approach-grid{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:clamp(30px,6vw,70px)}
+.service-approach-copy ul{display:grid;gap:12px;margin-top:20px;list-style:none}.service-approach-copy li{display:flex;gap:10px;color:var(--text);font-size:12px;line-height:1.7}.service-approach-copy li i{color:var(--accent)}
+.service-approach-image{height:390px;overflow:hidden;border-radius:19px}.service-approach-image img{width:100%;height:100%;object-fit:cover}
+.service-process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.service-process-card{padding:24px 20px;border-radius:15px;background:#fff;box-shadow:0 7px 22px rgba(10,37,64,.06)}
+.service-process-card>span{display:grid;width:42px;height:42px;place-items:center;margin-bottom:15px;border-radius:50%;background:var(--navy);color:#fff;font:600 20px 'Garet', 'Montserrat',serif}
+.service-process-card h3{margin-bottom:8px;color:var(--navy);font-size:23px}.service-process-card p{color:var(--text-light);font-size:12px;line-height:1.8}
+.service-faq{background:#fff}.service-faq-list{max-width:880px;margin:0 auto}.service-faq .faq-item{margin-bottom:12px;padding:0 18px;border:1px solid var(--border);border-radius:12px;background:#fff}
+.service-faq .faq-question{width:100%;padding:18px 2px;font-size:14px}.service-faq .faq-answer p{padding:0 2px 18px;font-size:13px;line-height:1.8}
+.service-cta{padding:clamp(28px,5vw,48px);border-radius:20px}.service-cta h2{max-width:650px;color:#fff;font-size:clamp(30px,4vw,42px);line-height:1.08}.service-cta .section-tag{color:#B7CBE8}
+@media(max-width:1000px){.service-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.service-hero{min-height:520px}.service-hero .hero-content{padding-top:100px}.service-overview-grid,.service-approach-grid{grid-template-columns:1fr}.service-overview-image{height:300px}.service-approach-image{height:280px}.service-consult-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.service-hero{min-height:500px}.service-hero h1{font-size:43px}.service-hero .hero-content>p{font-size:13px}.service-card-grid,.service-process-grid{grid-template-columns:1fr}.service-card{padding:23px}.service-cta{align-items:flex-start}}
+
+/* Shared navy and white service detail styling */
+.service-hero { min-height: 560px; }
+.service-card, .service-process-card, .service-consult-item, .service-faq .faq-item { border-radius: 18px; }
+.service-card h3, .service-process-card h3 { font-size: 21px; letter-spacing: -.015em; }
+.service-card p, .service-process-card p, .service-consult-item p { font-size: 13px; }
+.service-overview-image, .service-approach-image { border-radius: 20px; }
+.service-topics, .service-process { background: #f3f6fb; }
+.service-cta { background: linear-gradient(120deg, #0C2349, #173966); box-shadow: 0 18px 42px rgba(12,35,73,.16); }
+@media(max-width:760px){.service-hero{min-height:520px}.service-overview-image{height:290px}}
+
+/* Scale service headings for comfortable reading across viewports. */
+.service-hero h1 { font-size: clamp(38px,4.4vw,62px); line-height: 1.04; }
+.service-overview-copy h2, .service-approach-copy h2 { font-size: clamp(29px,3.3vw,42px); line-height: 1.12; }
+.service-card h3, .service-process-card h3 { font-size: 20px; line-height: 1.3; }
+.service-consult .section-heading h2 { font-size: clamp(29px,3.3vw,42px); }
+@media(max-width:760px){.service-hero h1{font-size:clamp(34px,7vw,44px)}.service-overview-copy h2,.service-approach-copy h2{font-size:clamp(27px,6vw,36px)}}
+@media(max-width:420px){.service-hero h1{font-size:34px}.service-overview-copy h2,.service-approach-copy h2{font-size:28px}}

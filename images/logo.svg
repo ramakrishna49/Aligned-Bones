@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 65" fill="none">
+  <rect width="200" height="65" rx="8" fill="#0C2349"/>
+  <path d="M25 20H15V45H25V20ZM35 30H30V45H35V30ZM45 25L40 35L45 45L50 35L45 25ZM60 20V45H70V25H65V32H70V27H65V20H60ZM75 20V45H85V20H75ZM95 25V40H105V45H95V25ZM110 20V45H120V20H110ZM125 20V45H135V20H125Z" fill="white"/>
+  <text x="145" y="33" font-family="Montserrat, sans-serif" font-weight="700" font-size="11" fill="white" letter-spacing="1">ALIGNED</text>
+  <text x="145" y="48" font-family="Montserrat, sans-serif" font-weight="700" font-size="11" fill="#345B91" letter-spacing="1">BONES</text>
+</svg>
