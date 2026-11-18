@@ -2828,3 +2828,16 @@ img,picture,video,iframe{max-width:100%}
  .booking-hero-bg{background-image:linear-gradient(90deg,rgba(5,24,45,.95),rgba(5,24,45,.82)),url('../images/appointment-hero.webp')}
  .doctor-hero-bg{background-image:linear-gradient(90deg,rgba(5,24,45,.95),rgba(5,24,45,.82)),url('../images/doctors-hero.webp')}
 }
+
+/* Mobile layouts keep copy inside the viewport instead of requiring sideways scrolling. */
+@media(max-width:760px){
+ html,body{max-width:100%;overflow-x:clip}
+ .container{width:min(100% - 32px,100%);max-width:100%}
+ .container>* ,
+ .container [class*="grid"]>* ,
+ .container [class*="row"]>*{min-width:0}
+ .container h1,.container h2,.container h3,.container h4,
+ .container p,.container li,.container label,.container .info-card a,
+ .container .contact-info-card a,.container .footer-address-details a{overflow-wrap:anywhere}
+ .container img,.container iframe,.container video,.container svg{max-width:100%}
+}

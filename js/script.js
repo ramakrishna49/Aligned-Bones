@@ -18,6 +18,34 @@ window.addEventListener("load", updateNavbar);
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
+/* Keep the current page highlighted while the user scrolls. */
+if (navLinks) {
+    const currentPath = window.location.pathname.replace(/\/$/, "/index.html");
+    const pageLinks = [...navLinks.querySelectorAll("a[href]")].filter((link) =>
+        !link.closest(".mobile-booking-item")
+    );
+
+    pageLinks.forEach((link) => {
+        link.classList.remove("active");
+        link.removeAttribute("aria-current");
+    });
+
+    const matchingLinks = pageLinks.filter((link) => {
+        const url = new URL(link.getAttribute("href"), window.location.href);
+        return url.origin === window.location.origin && url.pathname === currentPath;
+    });
+
+    matchingLinks.forEach((link) => {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+        const parentDropdownLink = link.closest(".dropdown")?.querySelector(":scope > .dropdown-link");
+        if (parentDropdownLink) {
+            parentDropdownLink.classList.add("active");
+            parentDropdownLink.setAttribute("aria-current", "page");
+        }
+    });
+}
+
 if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", () => {
         const isOpen = navLinks.classList.toggle("active");
