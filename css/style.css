@@ -2852,3 +2852,7 @@ img,picture,video,iframe{max-width:100%}
 
 .cta-box .cta-phone-button:hover,.cta-box .cta-phone-button:focus-visible{border-color:#fff;background:#fff!important;color:var(--navy)!important}
 .cta-box .cta-booking-button:hover,.cta-box .cta-booking-button:focus-visible{border-color:#fff;background:transparent!important;color:#fff!important}
+
+/* Preserve the current page marker when the mobile navbar switches to its scrolled style. */
+.navbar.scrolled .nav-links>li>a.active{color:var(--accent)!important}
+@media(max-width:1100px){.navbar .nav-links>li>a.active,.navbar.scrolled .nav-links>li>a.active{color:var(--accent)!important;background:rgba(52,91,145,.08);border-radius:8px;padding-inline:12px}}
