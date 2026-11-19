@@ -139,6 +139,30 @@ window.addEventListener("resize", () => {
     }
 });
 
+/* Automatically marquee the mobile category links so every topic is discoverable. */
+document.querySelectorAll(".catalog-jump nav").forEach((nav) => {
+    const links = [...nav.querySelectorAll(":scope > a")];
+    if (links.length < 2) return;
+
+    const track = document.createElement("div");
+    track.className = "catalog-jump-track";
+    const group = document.createElement("div");
+    group.className = "catalog-jump-group";
+    links.forEach((link) => group.append(link));
+
+    const duplicate = group.cloneNode(true);
+    duplicate.setAttribute("aria-hidden", "true");
+    duplicate.querySelectorAll("a").forEach((link) => link.setAttribute("tabindex", "-1"));
+    track.append(group, duplicate);
+    nav.append(track);
+
+    const setDuration = () => {
+        track.style.animationDuration = `${Math.max(24, group.scrollWidth / 34)}s`;
+    };
+    setDuration();
+    window.addEventListener("resize", setDuration, { passive: true });
+});
+
 /* ---------- Scroll Reveal ---------- */
 const revealElements = document.querySelectorAll(".reveal");
 

@@ -288,3 +288,13 @@
 .catalog-next-actions .btn-outline{border:1px solid rgba(255,255,255,.55);color:#fff}
 @media(max-width:900px){.catalog-next-panel{align-items:flex-start;flex-direction:column}.catalog-next-actions{width:100%}}
 @media(max-width:650px){.catalog-next-step{padding:42px 0 52px}.catalog-next-panel{gap:20px;padding:24px 20px;border-radius:16px}.catalog-next-actions{flex-direction:column}.catalog-next-actions .btn{width:100%;justify-content:center}}
+
+@media(max-width:650px){
+ .catalog-jump nav{display:block;overflow:hidden;touch-action:pan-y}
+ .catalog-jump-track{display:flex;width:max-content;animation:catalog-category-marquee 32s linear infinite;will-change:transform}
+ .catalog-jump-group{display:flex;flex:none;align-items:center;gap:8px;padding-right:8px}
+ .catalog-jump-group>a{flex:none}
+ .catalog-jump nav:hover .catalog-jump-track,.catalog-jump nav:focus-within .catalog-jump-track{animation-play-state:paused}
+}
+@keyframes catalog-category-marquee{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.catalog-jump-track{animation:none!important}}
