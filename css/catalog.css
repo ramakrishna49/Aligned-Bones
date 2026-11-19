@@ -294,7 +294,6 @@
  .catalog-jump-track{display:flex;width:max-content;animation:catalog-category-marquee 32s linear infinite;will-change:transform}
  .catalog-jump-group{display:flex;flex:none;align-items:center;gap:8px;padding-right:8px}
  .catalog-jump-group>a{flex:none}
- .catalog-jump nav:hover .catalog-jump-track,.catalog-jump nav:focus-within .catalog-jump-track{animation-play-state:paused}
 }
 @keyframes catalog-category-marquee{to{transform:translateX(-50%)}}
-@media(prefers-reduced-motion:reduce){.catalog-jump-track{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.catalog-jump-track{animation-name:catalog-category-marquee!important;animation-duration:40s!important;animation-timing-function:linear!important;animation-iteration-count:infinite!important}}
