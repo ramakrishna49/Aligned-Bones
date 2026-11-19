@@ -105,6 +105,8 @@
 .catalog-jump nav{gap:7px}
 .catalog-jump nav a{min-height:34px;padding:7px 12px;background:#f6f8fb;color:#30445e;font-size:11px}
 .catalog-jump nav a:hover{background:#eaf0f7}
+.catalog-jump-track,.catalog-jump-group{display:contents}
+.catalog-jump-group[aria-hidden="true"]{display:none}
 .catalog-services{padding-top:clamp(54px,6vw,76px);padding-bottom:clamp(60px,7vw,88px)}
 .catalog-services .section-heading{margin-bottom:30px}
 .catalog-services .section-heading .section-tag{color:#345b91}
@@ -292,7 +294,7 @@
 @media(max-width:650px){
  .catalog-jump nav{display:block;overflow:hidden;touch-action:pan-y}
  .catalog-jump-track{display:flex;width:max-content;animation:catalog-category-marquee 32s linear infinite;will-change:transform}
- .catalog-jump-group{display:flex;flex:none;align-items:center;gap:8px;padding-right:8px}
+ .catalog-jump-group,.catalog-jump-group[aria-hidden="true"]{display:flex;flex:none;align-items:center;gap:8px;padding-right:8px}
  .catalog-jump-group>a{flex:none}
 }
 @keyframes catalog-category-marquee{to{transform:translateX(-50%)}}
