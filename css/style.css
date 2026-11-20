@@ -2865,6 +2865,14 @@ img,picture,video,iframe{max-width:100%}
 .navbar.scrolled{background:rgba(255,255,255,.98);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%)}
 @media(max-width:1100px){.navbar:not(.scrolled) .nav-links.active>li>a{color:var(--navy)!important}.navbar:not(.scrolled) .nav-links.active>li>a.active{color:var(--accent)!important}}
 
+/* Branded profile artwork for doctors without an uploaded portrait. */
+.doctor-profile-visual{position:relative;display:grid;width:100%;height:350px;place-items:center;overflow:hidden;background:radial-gradient(circle at 72% 22%,rgba(183,203,232,.58),transparent 38%),linear-gradient(145deg,#e8eef6,#d9e4f0);color:#315581}
+.doctor-profile-visual::after{position:absolute;right:-40px;bottom:-110px;width:220px;height:220px;border:1px solid rgba(49,85,129,.14);border-radius:50%;box-shadow:0 0 0 25px rgba(49,85,129,.04),0 0 0 50px rgba(49,85,129,.03);content:""}
+.doctor-profile-visual>span{position:absolute;top:20px;left:20px;color:rgba(12,35,73,.48);font-size:15px;font-weight:800;letter-spacing:.16em}
+.doctor-profile-visual>i{z-index:1;display:grid;width:78px;height:78px;place-items:center;border:1px solid rgba(49,85,129,.16);border-radius:24px;background:rgba(255,255,255,.78);box-shadow:0 12px 28px rgba(12,35,73,.08);font-size:34px}
+@media(max-width:1050px){.doctor-profile-visual{height:330px}}
+@media(max-width:650px){.doctor-profile-visual{height:360px}}
+
 /* Tablet footer: keep link groups balanced and the clinic address easy to scan. */
 @media(min-width:651px) and (max-width:1050px){
  .footer .footer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px}
